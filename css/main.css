@@ -1,0 +1,19 @@
+header {
+  height: 80px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+header .logo, header .right-bar {
+  flex: 1 0 auto;
+  padding: 15px 0;
+}
+header .search {
+  flex: 0 1 auto;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+}
+header .search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
