@@ -1,10 +1,9 @@
 header {
   height: 80px;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 }
-header .logo,
-header .right-bar {
-  flex: 1 0 auto;
+header .logo, header .right-bar {
+  flex: 1 0 100px;
   padding: 15px 0;
 }
 header .search {
@@ -54,7 +53,7 @@ header .right-bar .left-nav li:last-child a {
   padding: 14px;
   margin-right: 15px;
 }
-header .right-bar .dropdown {
+header .right-bar .dropdown .btn {
   border: solid 1px rgba(0, 0, 0, 0.1);
   border-radius: 40px;
 }
@@ -72,4 +71,17 @@ header .right-bar .dropdown .btn img {
 }
 header .right-bar .dropdown .btn:after {
   display: none;
+}
+header .right-bar .dropdown .btn.show, header .right-bar .dropdown .btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+header .right-bar .dropdown ul.dropdown-menu {
+  width: 240px;
+  border: none;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
+  top: 13px !important;
+}
+header .right-bar .dropdown ul.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
 }/*# sourceMappingURL=main.css.map */
