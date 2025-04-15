@@ -2,7 +2,8 @@ header {
   height: 80px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
 }
-header .logo, header .right-bar {
+header .logo,
+header .right-bar {
   flex: 1 0 auto;
   padding: 15px 0;
 }
@@ -16,4 +17,59 @@ header .search button {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
+}
+header .search button.search-guest {
+  position: relative;
+  padding-right: 50px;
+}
+header .search button.search-guest a {
+  display: inline-block;
+  background: #ff385c;
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+header .search button.search-guest a ion-icon {
+  color: #fff;
+  font-size: 20px;
+}
+header .right-bar .left-nav {
+  margin-bottom: 0;
+}
+header .right-bar .left-nav li a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+}
+header .right-bar .left-nav li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+header .right-bar .left-nav li:last-child a {
+  padding: 14px;
+  margin-right: 15px;
+}
+header .right-bar .dropdown {
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+}
+header .right-bar .dropdown .btn .hamburger span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #000;
+}
+header .right-bar .dropdown .btn .hamburger span:nth-child(2) {
+  margin: 3px 0;
+}
+header .right-bar .dropdown .btn img {
+  opacity: 0.5;
+}
+header .right-bar .dropdown .btn:after {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
