@@ -1,3 +1,14 @@
+.own-container {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+@media (max-width: 1400px) {
+  .own-container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
 header {
   height: 80px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.1);
