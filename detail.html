@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cnd.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.2/css/bootstrap5-toggle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox-min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .toggle.ios,
+        .toggle-on.ios,
+        .toggle-off.ios {
+            border-radius: 20rem;
+        }
+
+        .toggle.ios .toggle-handle {
+            border-radius: 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex align-items-center">
+            <div class="logo d-flex align-items-center"><a href="#"><img src="images/logo.svg" alt=""></a></div>
+            <div class="search d-flex align-items-center">
+                <button class="btn">Anywhere</button>
+                <span>|</span>
+                <button class="btn">Any week</button>
+                <span>|</span>
+                <button class="btn search-guest ">Add guests
+                    <a href="#" class="d-flex align-items-center justify-content-center"><ion-icon
+                            name="search-outline"></ion-icon></a>
+                </button>
+            </div>
+            <div class="right-bar d-flex justify-content-end">
+                <ul class="unstyled list-inline clearfix left-nav">
+                    <li class="list-inline-item"><a href="#">Airbnb your home</a></li>
+                    <li class="list-inline-item"><a href="#" class="d-flex align-items-center"><img
+                                src="images/language-icon.svg" alt=""></a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle d-flex align-items-center " type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="hamburger me-3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="images/user-icon.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Signup</a></li>
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Airbnb your home</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="property-details">
+                <div class="main-title my-4 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Dudley Manor - 1BR Cottage w/ Pool</h5>
+                    <div class="share-property d-flex">
+                        <a href="" class="d-flex align-items-center me-4"><img class="me-2" src="images/share-icon.svg"
+                                alt="" width="16">Share</a>
+                        <a href="" class="d-flex align-items-center"><img class="me-2" src="images/save-icon.svg" alt=""
+                                width="16">Save</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="row g-2">
+                        <div class="col-lg-6">
+                            <a href="#" class="gallery-img" data-bs-toggle="modal" data-bs-target="#main-gallery-modal">
+                                <img src="images/property-detail/1.webp" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row g-2">
+                                <div class="col-lg-6">
+                                    <a href="#" class="gallery-img" data-bs-toggle="modal"
+                                        data-bs-target="#main-gallery-modal">
+                                        <img src="images/property-detail/2.webp" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="gallery-img" data-bs-toggle="modal"
+                                        data-bs-target="#main-gallery-modal">
+                                        <img src="images/property-detail/3.webp" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="gallery-img" data-bs-toggle="modal"
+                                        data-bs-target="#main-gallery-modal">
+                                        <img src="images/property-detail/4.webp" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="gallery-img" data-bs-toggle="modal"
+                                        data-bs-target="#main-gallery-modal">
+                                        <img src="images/property-detail/5.webp" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="show-all-btn d-flex align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#main-gallery-modal">
+                        <img src="images/show-all-icon.svg" width="16" alt="" class="me-2">Show all photos
+                    </a>
+
+                    <div class="modal fade" id="main-gallery-modal" tabindex="-1">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="modal-topheader d-flex justify-content-between">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div class="share-property d-flex">
+                                            <a href="#" class="d-flex align-items-center me-4"><img class="me-2" src="images/share-icon.svg"
+                                                    alt="" width="16">
+                                                Share</a>
+                                            <a href="#" class="d-flex align-items-center"><img class="me-2" src="images/save-icon.svg"
+                                                    alt="" width="16">
+                                                Save</a>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="main-gallery">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-8">
+                                                    <div class="row g-2">
+                                                        <div class="col-lg-12">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/1.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/1.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/2.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/2.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/3.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/3.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/4.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/4.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/5.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/5.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <a href="images/property-detail/tour/tour-category-gallery/6.webp" class="gallery-img" data-lightbox="tour">
+                                                                <img src="images/property-detail/tour/tour-category-gallery/6.webp"
+                                                                    class="img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer pt-5 pb-4">
+        <div class="own-container">
+            <h6>Inspiration for future gateways</h6>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="popular-tab" data-bs-toggle="tab"
+                        data-bs-target="#popular-tab-pane" type="button" role="tab" aria-controls="popular-tab-pane"
+                        aria-selected="true">Popular</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="arts-tab" data-bs-toggle="tab" data-bs-target="#arts-tab-pane"
+                        type="button" role="tab" aria-controls="arts-tab-pane" aria-selected="false">Arts &
+                        Culture</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="outdoors-tab" data-bs-toggle="tab" data-bs-target="#outdoors-tab-pane"
+                        type="button" role="tab" aria-controls="outdoors-tab-pane"
+                        aria-selected="false">Outdoors</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mountains-tab" data-bs-toggle="tab"
+                        data-bs-target="#mountains-tab-pane" type="button" role="tab" aria-controls="mountains-tab-pane"
+                        aria-selected="false">Mountains</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="popular-tab-pane" role="tabpanel"
+                    aria-labelledby="popular-tab" tabindex="0">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                        <div class="col">
+                            <p class="mb-0">Canmore</p>
+                            <span>Flat rentals</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="arts-tab-pane" role="tabpanel" aria-labelledby="arts-tab" tabindex="0">
+                    ...</div>
+                <div class="tab-pane fade" id="outdoors-tab-pane" role="tabpanel" aria-labelledby="outdoors-tab"
+                    tabindex="0">...</div>
+                <div class="tab-pane fade" id="mountains-tab-pane" role="tabpanel" aria-labelledby="mountains-tab"
+                    tabindex="0">...</div>
+
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="own-container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="quick-links">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="#">AirCover</a></li>
+                            <li><a href="#">Anti-discrimination</a></li>
+                            <li><a href="#">Disability support</a></li>
+                            <li><a href="#">Cancellation options</a></li>
+                            <li><a href="#">Report neighbourhood concern</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-links">
+                        <h5>Hosting</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Airbnb your home</a></li>
+                            <li><a href="#">AirCover for Hosts</a></li>
+                            <li><a href="#">Hosting resources</a></li>
+                            <li><a href="#">Community forum</a></li>
+                            <li><a href="#">Hosting responsibly</a></li>
+                            <li><a href="#">Join a free Hosting class</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="quick-links">
+                        <h5>Airbnb</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">New features</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Airbnb.org emergency stays</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright d-flex justify-content-between">
+                <div class="d-flex flex-wrap">
+                    <span>@ 2025 Airbnb, Inc.</span>
+                    <ul class="list-inline list-unstyled mb-0 ms-4">
+                        <li class="list-inline-item"><a href="#">Privacy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="#">Sitemap</a></li>
+                        <li class="list-inline-item"><a href="#">Company Details</a></li>
+                    </ul>
+                </div>
+                <ul class="list-inline list-unstyled mb-0 social">
+                    <li class="list-inline-item"><a href="#"><img src="images/language-icon.svg" alt="">English(USA)</a>
+                    </li>
+                    <li class="list-inline-item"><a href="#">R$ BRL</a></li>
+                    <li class="list-inline-item">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            mousewheel: true,
+            keyboard: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper1 = new Swiper('.propertyinside', {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/lightbox-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
