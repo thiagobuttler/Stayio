@@ -43,7 +43,7 @@ header .search button.search-guest {
 }
 header .search button.search-guest a {
   display: inline-block;
-  background: #ff385c;
+  background: #7A4ACA;
   width: 32px;
   height: 32px;
   border-radius: 25px;
@@ -107,6 +107,59 @@ header .right-bar .dropdown ul.dropdown-menu li a {
   padding: 10px 15px;
 }
 
+.navigation {
+  /*.total-price-toggle{
+      padding: 10px 20px;
+      border: solid 1px rgba(0, 0, 0, .2);
+      border-radius: 12px;
+      span{
+          margin-right: 10px;
+          @include setFont(12px, 500);
+      }
+      .toggle{
+          border: none;
+          height: 26px !important;
+          min-height: 26px;
+          min-width: 36px;
+          padding: 0;
+          .toggle-group{
+              .btn{
+                  position: absolute;
+                  border-radius: 50px;
+                  padding: 0;
+                  &:before{
+                      content: "";
+                      width: 22px;
+                      height: 22px;
+                      position: absolute;
+                      border-radius: 40px;
+                      top: 2px;
+                  }
+                  &.toggle-off{
+                      background: #b0b0b0;
+                      color:  #b0b0b0;
+                      &:before{
+                          background: #fff;
+                          left: 2px;
+                      }
+                  }
+                  &.toggle-on{
+                      background: #000;
+                      color: #000;
+                      &:before{
+                          background: #fff;
+                          left: auto;
+                          right: 2px;
+                      }
+                  }
+              }
+              .toggle-handle{
+                  display: none;
+              }
+          }
+      }
+  }*/
+}
 .navigation .slide-nav .main-menu {
   padding: 0 30px;
   overflow: hidden;
@@ -144,7 +197,7 @@ header .right-bar .dropdown ul.dropdown-menu li a {
   width: 100%;
   height: 3px;
   border-radius: 5px;
-  background-color: #ff385c;
+  background-color: #7A4ACA;
   bottom: 0;
   left: 0;
 }
@@ -182,57 +235,13 @@ header .right-bar .dropdown ul.dropdown-menu li a {
   color: #000;
   border: solid 1px #000;
 }
-.navigation .total-price-toggle {
-  padding: 10px 20px;
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-}
-.navigation .total-price-toggle span {
-  margin-right: 10px;
-  font-size: 12px;
-  font-weight: 500;
-}
-.navigation .total-price-toggle .toggle {
-  border: none;
-  height: 26px !important;
-  min-height: 26px;
-  min-width: 36px;
-  padding: 0;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn {
-  position: absolute;
-  border-radius: 50px;
-  padding: 0;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn:before {
-  content: "";
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  border-radius: 40px;
-  top: 2px;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn.toggle-off {
-  background: #b0b0b0;
-  color: #b0b0b0;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn.toggle-off:before {
-  background: #fff;
-  left: 2px;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn.toggle-on {
-  background: #000;
-  color: #000;
-}
-.navigation .total-price-toggle .toggle .toggle-group .btn.toggle-on:before {
-  background: #fff;
-  left: auto;
-  right: 2px;
-}
-.navigation .total-price-toggle .toggle .toggle-group .toggle-handle {
-  display: none;
-}
 
+.main-content .results .section-title {
+  font-size: 35;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #222;
+}
 .main-content .results .property {
   position: relative;
 }
@@ -270,7 +279,7 @@ header .right-bar .dropdown ul.dropdown-menu li a {
 }
 .main-content .results .property .property-images.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
-  background: #f00;
+  background: #7A4ACA;
   width: 15px;
   height: 8px;
   border-radius: 5px;
@@ -297,7 +306,8 @@ header .right-bar .dropdown ul.dropdown-menu li a {
   font-weight: 400;
   opacity: 0.7;
 }
-.main-content .results .property .property-details .far-away, .main-content .results .property .property-details .next-available {
+.main-content .results .property .property-details .far-away,
+.main-content .results .property .property-details .next-available {
   opacity: 0.7;
   font-weight: 400;
 }
