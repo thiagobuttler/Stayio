@@ -14,7 +14,10 @@
   <body>
     <div class="container">
       <div class="card">
-        <h1>Cadastrar</h1>
+        <div class="logo-login">
+          <img src="/LoginAndLogon/images/stayio_logo_70x70.png" alt="Logo Stayio" />
+        </div>
+        <h1>Cadastre-se</h1>
 
         <div id="msgError"></div>
         <div id="msgSuccess"></div>
@@ -48,13 +51,16 @@
           <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
         </div>
 
-        <div class="justify-center">
-          <button onclick="cadastrar()">Cadastrar</button>
+        <div class="button-container">
+          <div class="justify-center">
+            <button onclick="cadastrar()">Cadastrar</button>
+          </div>
+  
+          <div class="justify-center">
+            <button onclick="voltar()">Voltar</button>
+          </div>
         </div>
 
-        <div class="justify-center">
-          <button onclick="voltar()">Voltar</button>
-        </div>
       </div>
     </div>
 

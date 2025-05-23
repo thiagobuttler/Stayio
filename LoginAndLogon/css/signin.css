@@ -1,141 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/background_login_logon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background: #f6f6f6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 100px;
-
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
 }
 
 .card {
-    background-color: #ffffffd8;
-    padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000060;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo-login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.logo-login img {
+    max-width: 80px;
+    height: 80px;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #272262;
-}
-
-.label-float input {
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #272262;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  color: #333;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .label-float {
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #4038a0;
+  border-bottom-color: #333;
 }
 
 .label-float label {
-    color: #272262;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all .3s ease-out;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.2s ease all;
 }
 
 .label-float input:focus + label,
-.label-float input:valid + label{
-    font-size: 13px;
-    margin-top: 0;
-    color: #4038a0;
+.label-float input:valid + label {
+  top: 0;
+  font-size: 12px;
+  color: #333;
 }
 
 button {
-    background-color: transparent;
-    border-color: #272262;
-    color: #272262;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all .4s ease-out;
+  width: 100%;
+  background-color: #7A4ACA;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: #272262;
-    color: #fff;
+  background-color: #3a006b;
 }
 
 .justify-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 hr {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 60%;
+  width: 60%;
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 24px 0;
 }
 
 p {
-    color: #272262;
-    font-size: 14pt;
-    text-align: center;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
 }
 
 a {
-    color: #7a3077;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-out;
+  color: #7A4ACA;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-    color: #272262;
+  text-decoration: underline;
 }
 
 .fa-eye {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    cursor: pointer;
-    color: #272262;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  cursor: pointer;
+  color: #7A4ACA;
 }
 
 #msgError {
-    text-align: center;
-    color: #ff0000;
-    background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
+  text-align: center;
+  color: #333;
+  background-color: #c7c7c7;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  margin-bottom: 16px;
 }
