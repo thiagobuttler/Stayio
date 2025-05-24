@@ -394,6 +394,172 @@ header .right-bar .dropdown ul.dropdown-menu li a {
   -o-object-position: center center;
      object-position: center center;
 }
+.main-content .property-details .about-property h3.property-main-heading {
+  font-size: 22px;
+  font-weight: 500;
+}
+.main-content .property-details .about-property .property-title ul li {
+  margin-bottom: 0;
+  position: relative;
+  padding-right: 15px;
+  margin-right: 0;
+}
+.main-content .property-details .about-property .property-title ul li:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #000;
+  top: 50%;
+  right: 4px;
+}
+.main-content .property-details .about-property .property-title ul li:last-child {
+  padding-right: 0;
+}
+.main-content .property-details .about-property .property-title ul li:last-child:after {
+  display: none;
+}
+.main-content .property-details .about-property .property-title .review p.average-rating {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding-right: 15px;
+  margin-right: 8px;
+}
+.main-content .property-details .about-property .property-title .review p.average-rating:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #000;
+  top: 50%;
+  right: 4px;
+}
+.main-content .property-details .about-property .property-title .review p.total-review-count a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.main-content .property-details .about-property .host {
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+.main-content .property-details .about-property .host .host-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+}
+.main-content .property-details .about-property .host .host-avatar img {
+  border-radius: 40px;
+}
+.main-content .property-details .about-property .host .host-avatar .superhost-icon {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 16px;
+  height: 24px;
+}
+.main-content .property-details .about-property .host .host-avatar .superhost-icon img {
+  border-radius: 0px;
+  width: 16px;
+}
+.main-content .property-details .about-property .host h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.main-content .property-details .about-property .host p {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main-content .property-details .about-property .host p span {
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+}
+.main-content .property-details .about-property .host p span:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #000;
+  top: 50%;
+  right: 4px;
+}
+.main-content .property-details .about-property .host p span:last-child {
+  padding-right: 0;
+}
+.main-content .property-details .about-property .host p span:last-child:after {
+  display: none;
+}
+.main-content .property-details .about-property .host.highlights {
+  border-top: 0;
+}
+.main-content .property-details .about-property .host.highlights .host-avatar {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.main-content .property-details .about-property .host.highlights .host-avatar img {
+  border-radius: 0;
+}
+.main-content .property-details .about-property .description {
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+.main-content .property-details .about-property .description a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.main-content .property-details .about-property .description a span {
+  text-decoration: underline;
+}
+.main-content .property-details .about-property .where-sleep {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+.main-content .property-details .about-property .where-sleep figure figcaption {
+  margin-top: 5px;
+}
+.main-content .property-details .about-property .where-sleep figure figcaption p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.main-content .property-details .about-property .where-sleep figure figcaption span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.main-content .property-details .about-property .amenities {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+.main-content .property-details .about-property .amenities .col {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: start;
+}
+.main-content .property-details .about-property .amenities .col img {
+  margin-right: 15px;
+}
+.main-content .property-details .about-property .amenities .show-all a {
+  border: solid 1px #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
 
 .lightboxOverlay {
   opacity: 1;

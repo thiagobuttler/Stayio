@@ -499,6 +499,175 @@ header {
                 }
             }
         }
+        .about-property{
+            h3.property-main-heading{
+                @include setFont(22px, 500);
+            }
+            .property-title{
+                ul{
+                    li{
+                        margin-bottom: 0;
+                        position: relative;
+                        padding-right: 15px;
+                        margin-right: 0;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            width: 2px;
+                            height: 2px;
+                            border-radius: 4px;
+                            background: #000;
+                            top: 50%;
+                            right: 4px;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                            &:after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .review{
+                    p.average-rating{
+                        @include setFont(18px, 500);
+                        position: relative;
+                        padding-right: 15px;
+                        margin-right: 8px;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            width: 2px;
+                            height: 2px;
+                            border-radius: 4px;
+                            background: #000;
+                            top: 50%;
+                            right: 4px;
+                        }
+                    }
+                    p.total-review-count{
+                        a{
+                            @include setFont(16px, 500);
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .host{
+                border-top: solid 1px rgba(0,0,0,.1);
+                border-bottom: solid 1px rgba(0,0,0,.1);
+                .host-avatar{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    position: relative;
+                    img{
+                        border-radius: 40px;
+                    }
+                    .superhost-icon{
+                        position: absolute;
+                        bottom:-3px;
+                        right: -3px;
+                        width: 16px;
+                        height: 24px;
+                        img{
+                            border-radius: 0px;
+                            width: 16px;
+                        }
+                    }
+                }
+                h5{
+                    @include setFont(16px, 500);
+                }
+                p{
+                    opacity: .7;
+                    @include setFont(14px, 500);
+                    span{
+                        display: inline-block;
+                        position: relative;
+                        padding-right: 10px;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            width: 2px;
+                            height: 2px;
+                            border-radius: 4px;
+                            background: #000;
+                            top: 50%;
+                            right: 4px; 
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                            &:after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &.highlights{
+                    border-top: 0;
+                    .host-avatar{
+                        border-radius: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        img{
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+            .description{
+                @include setFont(16px, 400);
+                border-bottom: solid 1px rgba(0,0,0,.1);
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    @include setFont(16px, 500);
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .where-sleep{
+                border-bottom: solid 1px rgba(0,0,0,.1);
+                figure{
+                    figcaption{
+                        margin-top: 5px;
+                        p{
+                            @include setFont(16px, 500);
+                            color: #000;
+                        }
+                        span{
+                            @include setFont(14px, 400);
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .amenities{
+                border-bottom: solid 1px rgba(0,0,0,.1);
+                .col{
+                    @include setFont(16px, 400);
+                    display: flex;
+                    align-items: start;
+                    img{
+                        margin-right: 15px;
+                    }
+                }
+                .show-all{
+                    a{
+                        border: solid 1px #000;
+                        border-radius: 5px;
+                        @include setFont(16px, 500);
+                        padding: 15px 25px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
     }
 }
 
