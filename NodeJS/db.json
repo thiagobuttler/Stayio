@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "nome": "Casa",
+      "cpf": "11111111111",
+      "email": "lincoln_garbin@hotmail.com",
+      "senha": "222222"
+    },
+    {
+      "nome": "Thiago",
+      "cpf": "00000000000",
+      "email": "thiago@",
+      "senha": "000000"
+    }
+  ]
+}
