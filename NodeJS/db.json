@@ -11,6 +11,56 @@
       "cpf": "00000000000",
       "email": "thiago@",
       "senha": "000000"
+    },
+    {
+      "nome": "giovanna",
+      "cpf": "22222222222",
+      "email": "giovanna@",
+      "senha": "444444"
+    },
+    {
+      "nome": "toledo",
+      "cpf": "55555555555",
+      "email": "toledo@",
+      "senha": "888888"
+    },
+    {
+      "nome": "coco",
+      "cpf": "00000000000",
+      "email": "coco@",
+      "senha": "000000"
+    }
+  ],
+  "usuariosundefined": [
+    {
+      "nome": "Casa",
+      "cpf": "11111111111",
+      "email": "lincoln_garbin@hotmail.com",
+      "senha": "222222"
+    },
+    {
+      "nome": "Thiago",
+      "cpf": "00000000000",
+      "email": "thiago@",
+      "senha": "000000"
+    },
+    {
+      "nome": "giovanna",
+      "cpf": "22222222222",
+      "email": "giovanna@",
+      "senha": "444444"
+    },
+    {
+      "nome": "toledo",
+      "cpf": "55555555555",
+      "email": "toledo@",
+      "senha": "888888"
+    },
+    {
+      "nome": "coco",
+      "cpf": "00000000000",
+      "email": "coco@",
+      "senha": "000000"
     }
   ]
 }

@@ -37,7 +37,7 @@ function entrar() { // Função chamada ao tentar fazer login
         })
 
         if(userValid) { // Se encontrou usuário válido
-            window.location.href = '../../../index.html' // Redireciona para a página principal
+            window.location.href = '../../index.html' // Redireciona para a página principal
 
             let mathRandom = Math.random().toString(16).substr(2); // Gera parte do token aleatório
             let token = mathRandom + mathRandom; // Cria o token
