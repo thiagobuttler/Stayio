@@ -1,9 +1,11 @@
 # Integrantes
 
 **Gabriel Toledo de Moura**
+
 RA:823110770
 
 **Giovana Alves Magalhães**
+
 RA:823214424
 
 **Thiago Buttler Paulino** 
