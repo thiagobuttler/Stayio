@@ -19,52 +19,6 @@ server.get('/', (req, res) => {
     res.send('🙋‍♂️ Oi gentessssss...você acessou a raiz /');
 });
 
-server.get('/frutas', (req, res) => {
-    let dados = db.get("/frutas")
-    console.log("dados",dados);    
-    res.json(dados);
-});
-
-server.get('/frutas/:id', (req, res) => {
-    console.log("passei aqui",req.params.id);    
-    let dados = db.get("/frutas/"+req.params.id)
-    console.log("dados",dados);    
-    res.json(dados);
-});
-
-server.post('/frutas/:id', (req, res) => {
-    console.log("recebi uma requisição POST /frutas/:id",req.params.id);    
-    console.log("chegou no body",req.body);    
-    let elem = {
-        id: req.params.id,
-        nome: req.body.nome,
-        cor: req.body.cor
-    }
-    console.log("elem",elem)
-    db.set("/frutas/"+elem.id, elem)
-    res.json({ msg: "ok", elem });
-});
-
-server.put('/frutas/:id', (req, res) => {
-    console.log("recebi uma requisição PUT /frutas/:id",req.params.id);    
-    console.log("chegou no body",req.body);    
-    let elem = {
-        id: req.params.id,
-        nome: req.body.nome,
-        cor: req.body.cor
-    }
-    console.log("elem",elem)
-    db.set("/frutas/"+elem.id, elem)
-    res.json({ msg: "ok", elem });
-});
-
-server.delete('/frutas/:id', (req, res) => {
-    console.log("recebi uma requisição DELETE /frutas/:id",req.params.id);    
-    db.set("/frutas/"+req.params.id, null)
-    res.json({ msg: "ok. Removido com sucesso" });
-});
-
-
 server.post('/usuarios', (req, res) => {
     // Pega a lista atual de usuários ou cria uma nova se não existir
     let usuarios = db.get("/usuarios") || [];
