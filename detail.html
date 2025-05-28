@@ -30,45 +30,41 @@
 </head>
 
 <body>
-    <header>
-        <div class="container d-flex align-items-center">
-            <div class="logo d-flex align-items-center"><a href="#"><img src="images/stayio_logo_70x70.png" alt=""></a></div>
-            <div class="search d-flex align-items-center">
-                <button class="btn">Qualquer lugar</button>
-                <span>|</span>
-                <button class="btn">Qualquer dia</button>
-                <span>|</span>
-                <button class="btn search-guest ">Hóspedes?
-                    <a href="#" class="d-flex align-items-center justify-content-center"><ion-icon
-                            name="search-outline"></ion-icon></a>
+    <header class="own-container d-flex align-items-center">
+        <div class="logo d-flex align-items-center"><a href="index.html"><img src="images/stayio_logo_70x70.png" alt=""></a>
+        </div>
+        <div class="search d-flex align-items-center">
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+            <label for="searchInput">
+                <a href="#" class="d-flex align-items-center justify-content-center"><ion-icon
+                        name="search-outline">Search</ion-icon></a>
+            </label>
+        </div>
+        <div class="right-bar d-flex justify-content-end">
+            <ul class="unstyled list-inline clearfix left-nav">
+                <li class="list-inline-item"><a href="#">Stayio sua casa</a></li>
+                <li class="list-inline-item"><a href="#" class="d-flex align-items-center"><img
+                            src="images/language-icon.svg" alt=""></a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle d-flex align-items-center " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="hamburger me-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img src="images/user-icon.svg" alt="">
                 </button>
-            </div>
-            <div class="right-bar d-flex justify-content-end">
-                <ul class="unstyled list-inline clearfix left-nav">
-                    <li class="list-inline-item"><a href="#">Stayio sua casa</a></li>
-                    <li class="list-inline-item"><a href="#" class="d-flex align-items-center"><img
-                                src="images/language-icon.svg" alt=""></a></li>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="LoginAndLogon/html/signup.html">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="LoginAndLogon/html/signin.html">Login</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Stayio sua casa</a></li>
+                    <li><a class="dropdown-item" href="#">Ajuda</a></li>
                 </ul>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle d-flex align-items-center " type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="hamburger me-3">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <img src="images/user-icon.svg" alt="">
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="LoginAndLogon/html/signup.html">Cadastre-se</a></li>
-                        <li><a class="dropdown-item" href="LoginAndLogon/html/signin.html">Login</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Stayio sua casa</a></li>
-                        <li><a class="dropdown-item" href="#">Ajuda</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </header>
