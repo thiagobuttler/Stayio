@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Stayio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -32,16 +32,14 @@
 
 <body>
     <header class="own-container d-flex align-items-center">
-        <div class="logo d-flex align-items-center"><a href="#"><img src="images/stayio_logo_70x70.png" alt=""></a></div>
+        <div class="logo d-flex align-items-center"><a href="index.html"><img src="images/stayio_logo_70x70.png" alt=""></a>
+        </div>
         <div class="search d-flex align-items-center">
-            <button class="btn">Qualquer lugar</button>
-            <span>|</span>
-            <button class="btn">Qualquer dia</button>
-            <span>|</span>
-            <button class="btn search-guest ">Hóspedes?
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+            <label for="searchInput">
                 <a href="#" class="d-flex align-items-center justify-content-center"><ion-icon
-                        name="search-outline"></ion-icon></a>
-            </button>
+                        name="search-outline">Search</ion-icon></a>
+            </label>
         </div>
         <div class="right-bar d-flex justify-content-end">
             <ul class="unstyled list-inline clearfix left-nav">
@@ -232,8 +230,8 @@
             </div>
         </div>
         <div class="main-content">
+            <h4 class="section-title">Acomodações muito procuradas:</h4>
             <div class="results">
-                 <h4 class="section-title">Acomodações muito procuradas:</h4>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="property">
@@ -558,16 +556,20 @@
                             <div class="property-images swiper propertyinside">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="images/property-detail/tour/tour-category-gallery/1.webp" class="img-fluid rounded" alt="">
+                                        <img src="images/property-detail/tour/tour-category-gallery/1.webp"
+                                            class="img-fluid rounded" alt="">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="images/property-detail/tour/tour-category-gallery/2.webp" class="img-fluid rounded" alt="">
+                                        <img src="images/property-detail/tour/tour-category-gallery/2.webp"
+                                            class="img-fluid rounded" alt="">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="images/property-detail/tour/tour-category-gallery/3.webp" class="img-fluid rounded" alt="">
+                                        <img src="images/property-detail/tour/tour-category-gallery/3.webp"
+                                            class="img-fluid rounded" alt="">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="images/property-detail/tour/tour-category-gallery/1.jpeg" class="img-fluid rounded" alt="">
+                                        <img src="images/property-detail/tour/tour-category-gallery/1.jpeg"
+                                            class="img-fluid rounded" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -619,8 +621,8 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="outdoors-tab" data-bs-toggle="tab" data-bs-target="#outdoors-tab-pane"
-                        type="button" role="tab" aria-controls="outdoors-tab-pane"
-                        aria-selected="false">Ao ar livre</button>
+                        type="button" role="tab" aria-controls="outdoors-tab-pane" aria-selected="false">Ao ar
+                        livre</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="mountains-tab" data-bs-toggle="tab"
@@ -782,7 +784,8 @@
                     </ul>
                 </div>
                 <ul class="list-inline list-unstyled mb-0 social">
-                    <li class="list-inline-item"><a href="#"><img src="images/language-icon.svg" alt=""> Português(BR)</a>
+                    <li class="list-inline-item"><a href="#"><img src="images/language-icon.svg" alt="">
+                            Português(BR)</a>
                     </li>
                     <li class="list-inline-item"><a href="#">R$ BRL</a></li>
                     <li class="list-inline-item">
